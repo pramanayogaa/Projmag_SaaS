@@ -1,19 +1,19 @@
 import Image from 'next/image';
 import React from 'react'
 
-interface featuresCardProps {
+interface aboutCardProps {
     image?: string;
     name: string;
     position: string;
     quote: string;
 }
 
-export default function featuresCard ({
+export default function aboutCard ({
     image,
     name,
     position,
     quote
-}: featuresCardProps) {
+}: aboutCardProps) {
     return (
         <div className='bg-white w-[352px] h-[322px] rounded-[4px] px-4 pt-8'>
             <div className='flex flex-col gap-4 items-center'>
