@@ -4,10 +4,10 @@ import FeaturesCard from '@/components/ui/featuresCard'
 const features = () => {
   return (
     <section className="bg-gray-200 mt-10">
-        <div className="w-full mx-auto max-w-7xl py-28">
+        <div className="w-full mx-auto max-w-7xl py-12 md:py-28">
           <div className='flex flex-col items-center'>
-            <h1 className='font-bold text-4xl'>Powerful Features Design For You</h1>
-            <div className='flex gap-8 pt-24'>
+            <h1 className='font-bold text-2xl px-20 text-center md:text-3xl lg:text-4xl'>Powerful Features Design For You</h1>
+            <div className='flex flex-col md:flex-row gap-8 py-8 md:pt-24'>
                 <FeaturesCard
                     image='/intuitiveWorkflow.png'
                     title='Intuitive Workflow'
@@ -29,7 +29,7 @@ const features = () => {
 
                 />
             </div>
-            <div className='flex gap-8 pt-8'>
+            <div className='md:flex gap-8 pt-4 hidden'>
                 <FeaturesCard
                     image='/seamlessCollaboration.png'
                     title='Seamless Collaboration'
@@ -49,6 +49,7 @@ const features = () => {
 
                 />
             </div>
+            <p className='text-sm text-gray-500 py-4 underline cursor-pointer md:hidden'>More Features</p>
           </div>
         </div>
       </section>
